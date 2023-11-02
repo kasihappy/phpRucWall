@@ -1,0 +1,114 @@
+<!doctype html>
+<!--
+            ◢＼　 ☆　　 ／◣
+    　  　∕　　﹨　╰╮∕　　﹨
+    　  　▏　　～～′′～～ 　｜
+    　　  ﹨／　　　　　　 　＼∕
+    　 　 ∕ 　　●　　　 ●　＼
+      ＝＝　○　∴·╰╯　∴　○　＝＝
+    　    ╭──╮　　　　　╭──╮
+  ╔═∪∪∪═kasihappy's=cat═∪∪∪═╗
+-->
+<html lang="zh-CN">
+
+<head>
+  <meta charset="utf-8">
+  <title>人大校园墙</title>
+  <link rel="stylesheet" href="../css/style.css"/>
+</head>
+<body>
+<div class="box">
+  <div class="top">
+    <div class="title">人大校园墙</div>
+    <div class="nav">
+      <a href="./addPosts.html">我来说一说</a>
+      <a href="./logout.html">退出登录</a>
+    </div>
+  </div>
+  <div class="main">
+    <div>今天的新鲜事</div>
+<!--    <input type="hidden" name="id" value="1">
+    <input type="button" value="下一个">
+    <p id="result1"></p>
+    <p id="result2"></p>
+    <p id="result3"></p>
+    <p id="result4"></p>
+    <script type="text/javascript">
+      let btn = document.querySelector('input[type="button"]');
+     let numInput = document.querySelector('input[name="id"]');
+
+      btn.addEventListener('click', function() {
+        let num = parseInt(numInput.value);
+        num++;
+
+       numInput.value = num;
+
+       // 使用ajax调用php
+       let xhr = new XMLHttpRequest();
+
+        xhr.open('POST', './../controller/posts/show.php');
+        xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+        xhr.onload = function() {
+          if (xhr.status === 200) {
+            let response = JSON.parse(xhr.responseText)
+            // 在这里可以获取返回的num值并继续操作
+            console.log(response.id)
+            document.getElementById('result1').textContent = response.id
+            document.getElementById('result2').textContent = response.author
+            document.getElementById('result3').textContent = response.content
+            document.getElementById('result4').textContent = response.title
+          } else {
+            console.log("no use")
+          }
+        }
+        xhr.send(null)
+      })
+  </script>-->
+    <div class="post">
+      <a href="./../controller/posts/showPosts.php" class="post-title">
+        <h3><strong>震惊！一男子怒写63页ppt控诉女友出轨</strong></h3>
+      </a>
+      <div class="post-meta">
+        <span><i class="author"></i>kasi</span>
+        <span><i class="comments-number"></i>2 </span>
+      </div>
+      <div class="post-content">
+        <p>据说这个女的报警要抓这个男的</p>
+      </div>
+      <div class="post-comments">
+        <p>hello<br>llohe<br></p>
+      </div>
+    </div>
+
+
+    <button id="loadMore">显示更多</button>
+<!--    <script type="text/javascript">
+      function ajaxRequest() {
+        let xhr = new XMLHttpRequest();
+        xhr.onload = function (){
+          const data = JSON.parse(xhr.responseText);
+
+          //新建框
+          const div = document.createElement('div');
+          div.innerHTML = data.content;
+          document.body.appendChild(div);
+        };
+        xhr.onerror = function (){
+          console.log("something bad happened");
+        };
+        return xhr;
+      }
+
+      btn = document.getElementById('loadMore');
+      btn.addEventListener('click', function (){
+        const xhr = ajaxRequest();
+        xhr.open('POST', './../controller/posts/show.php');
+        xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+        xhr.send(null);
+      })
+    </script>-->
+
+  </div>
+</div>
+</body>
+</html>

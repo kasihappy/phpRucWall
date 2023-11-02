@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>用户登录</title>
+    <link rel="stylesheet"  href="./../css/index_log.css" />
+
+</head>
+
+<body>
+<div class="login">
+    <h2>用户登录</h2>
+    <form id="loginForm" action="./../controller/login/login.php" method="post">
+    <div class="login_box">
+
+        <input type="text" name='username' id='username' required="required">
+        <label for="username" >用户名</label>
+    </div>
+    <div class="login_box">
+
+        <input type="password" name='password' id='password' required="required">
+        <label for="password">密码</label>
+    </div>
+    <a href="./register.html">注册账号</a>
+        <span></span>
+    <a>
+        登录
+        <button type="submit"></button>
+    </a>
+    </form>
+</div>
+
+
+</body>
+</html>
